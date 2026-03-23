@@ -15,7 +15,7 @@
 :root{--pr:#D4641E;--pr-d:#A94E18;--pr-l:#F0824A;--gold:#C9A84C;--dk:#1A1A1A;--dk2:#2D2D2D;--gr:#6B7280;--gr-l:#9CA3AF;--lt:#FAF7F2;--lt2:#F3EDE4;--wh:#FFFFFF;--bd:#E5DDD0;--sh:0 4px 24px rgba(0,0,0,.10);--sh-lg:0 8px 48px rgba(0,0,0,.15);--r:16px;--fh:'Playfair Display',Georgia,serif;--fb:'Inter',system-ui,sans-serif;--tr:all .3s ease;--nh:72px}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:var(--fb);color:var(--dk);background:var(--wh);line-height:1.6;overflow-x:hidden}
+body{font-family:var(--fb);color:var(--dk);background:var(--lt);line-height:1.6;overflow-x:hidden}
 img{max-width:100%;height:auto;display:block}
 a{text-decoration:none;color:inherit}
 button{cursor:pointer;border:none;background:none;font-family:inherit}
@@ -23,10 +23,10 @@ h1{font-family:var(--fh);font-size:clamp(2rem,5vw,3.5rem);line-height:1.1}
 h2{font-family:var(--fh);font-size:clamp(1.4rem,3vw,2rem);line-height:1.2}
 h3{font-family:var(--fh);font-size:1.15rem;line-height:1.3}
 p{line-height:1.7}
-.container{max-width:1100px;margin:0 auto;padding:0 1.5rem}
+.container{max-width:1440px;margin:0 auto;padding:0 3rem}
 
 /* NAV */
-.navbar{position:sticky;top:0;z-index:100;height:var(--nh);background:var(--wh);box-shadow:var(--sh)}
+.navbar{position:sticky;top:0;z-index:100;height:var(--nh);background:var(--wh);box-shadow:var(--sh);width:100%}
 .nav-in{height:var(--nh);display:flex;align-items:center;justify-content:space-between}
 .nlogo{font-family:var(--fh);font-size:1.4rem;font-weight:700;color:var(--dk)}
 .nlogo span{color:var(--gold)}
@@ -55,7 +55,7 @@ p{line-height:1.7}
 .pill-gold{background:rgba(201,168,76,.15);border-color:rgba(201,168,76,.3);color:var(--gold)}
 
 /* MAIN LAYOUT */
-.menu-layout{display:grid;grid-template-columns:240px 1fr;gap:3rem;padding:4rem 0}
+.menu-layout{display:grid;grid-template-columns:280px 1fr;gap:2.5rem;padding:3rem 0}
 
 /* STICKY SIDEBAR */
 .sidebar{position:sticky;top:calc(var(--nh) + 1.5rem);align-self:start;height:fit-content}
@@ -83,7 +83,7 @@ p{line-height:1.7}
 .cta-wa:hover{background:#1da851}
 
 /* MENU CONTENT */
-.menu-content{}
+.menu-content{background:var(--wh);border-radius:24px;padding:2.5rem;box-shadow:0 2px 12px rgba(0,0,0,.06)}
 .menu-section{margin-bottom:3.5rem}
 .menu-section:last-child{margin-bottom:0}
 
@@ -93,7 +93,7 @@ p{line-height:1.7}
 .section-header p{color:var(--gr);font-size:.875rem;margin-top:.2rem}
 
 /* FORMULA CARDS */
-.formulas-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.25rem}
+.formulas-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem}
 .formula-card{background:var(--wh);border:1.5px solid var(--bd);border-radius:var(--r);overflow:hidden;transition:var(--tr);position:relative}
 .formula-card:hover{border-color:var(--pr);box-shadow:var(--sh);transform:translateY(-3px)}
 .formula-card.featured{border-color:var(--gold)}
@@ -128,7 +128,7 @@ p{line-height:1.7}
 .acc-note strong{color:var(--dk);display:block;margin-bottom:.35rem;font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;color:var(--gold)}
 
 /* BOISSONS & EXTRAS TABLE */
-.simple-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.75rem}
+.simple-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.75rem}
 .sl-item{display:flex;align-items:center;justify-content:space-between;background:var(--lt);border-radius:10px;padding:.875rem 1rem;border:1px solid var(--bd);font-size:.9rem;transition:var(--tr)}
 .sl-item:hover{border-color:var(--pr);background:rgba(212,100,30,.04)}
 .sl-name{font-weight:500;color:var(--dk)}
@@ -139,7 +139,7 @@ p{line-height:1.7}
 .pdf-note p{color:var(--gr);font-size:.9rem;margin:.5rem 0}
 
 /* FOOTER */
-.mfooter{background:var(--dk);color:rgba(255,255,255,.6);padding:2.5rem 0;margin-top:5rem;text-align:center}
+.mfooter{background:var(--dk);color:rgba(255,255,255,.6);padding:2.5rem 0;margin-top:3rem;text-align:center}
 .mfooter .nlogo{display:inline-block;font-family:var(--fh);font-size:1.4rem;font-weight:700;color:var(--wh);margin-bottom:.75rem}
 .mfooter .nlogo span{color:var(--gold)}
 .mfooter p{font-size:.85rem}
@@ -147,13 +147,20 @@ p{line-height:1.7}
 .mfooter a:hover{color:var(--wh)}
 
 /* RESPONSIVE */
+@media(max-width:1100px){
+  .container{padding:0 2rem}
+  .menu-layout{grid-template-columns:240px 1fr;gap:2rem}
+}
 @media(max-width:900px){
+  .container{padding:0 1.5rem}
   .menu-layout{grid-template-columns:1fr;gap:2rem}
   .sidebar{position:static}
+  .sidebar-card{padding:1rem}
   .cat-nav{flex-direction:row;flex-wrap:wrap}
   .cat-btn{width:auto;flex:0 0 auto}
   .cat-btn .cnt{display:none}
   .hours-box,.cta-box{display:none}
+  .menu-content{padding:1.5rem}
 }
 @media(max-width:768px){
   .nav-links{display:none}
@@ -161,7 +168,9 @@ p{line-height:1.7}
   .formulas-grid{grid-template-columns:1fr}
 }
 @media(max-width:480px){
+  .container{padding:0 1rem}
   .hero-pills{flex-direction:column;align-items:center}
+  .menu-content{padding:1rem}
 }
 </style>
 </head>
