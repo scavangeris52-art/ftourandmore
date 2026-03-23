@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu — Restaurant Ftour & More Nador</title>
+<meta name="description" content="Découvrez le menu complet du restaurant Ftour & More à Nador. Formules petit-déjeuner et brunch, servis jusqu'à 15h00. Cuisine du monde.">
+<meta property="og:title" content="Menu — Ftour & More Nador">
+<meta property="og:description" content="Nos formules petit-déjeuner & brunch à partir de 39 MAD, servies jusqu'à 15h00.">
+<link rel="canonical" href="https://ftourandmore.ma/menu.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--pr:#D4641E;--pr-d:#A94E18;--pr-l:#F0824A;--gold:#C9A84C;--dk:#1A1A1A;--dk2:#2D2D2D;--gr:#6B7280;--gr-l:#9CA3AF;--lt:#FAF7F2;--lt2:#F3EDE4;--wh:#FFFFFF;--bd:#E5DDD0;--sh:0 4px 24px rgba(0,0,0,.10);--sh-lg:0 8px 48px rgba(0,0,0,.15);--r:16px;--fh:'Playfair Display',Georgia,serif;--fb:'Inter',system-ui,sans-serif;--tr:all .3s ease;--nh:72px}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--fb);color:var(--dk);background:var(--wh);line-height:1.6;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{text-decoration:none;color:inherit}
+button{cursor:pointer;border:none;background:none;font-family:inherit}
+h1{font-family:var(--fh);font-size:clamp(2rem,5vw,3.5rem);line-height:1.1}
+h2{font-family:var(--fh);font-size:clamp(1.4rem,3vw,2rem);line-height:1.2}
+h3{font-family:var(--fh);font-size:1.15rem;line-height:1.3}
+p{line-height:1.7}
+.container{max-width:1100px;margin:0 auto;padding:0 1.5rem}
+
+/* NAV */
+.navbar{position:sticky;top:0;z-index:100;height:var(--nh);background:var(--wh);box-shadow:var(--sh)}
+.nav-in{height:var(--nh);display:flex;align-items:center;justify-content:space-between}
+.nlogo{font-family:var(--fh);font-size:1.4rem;font-weight:700;color:var(--dk)}
+.nlogo span{color:var(--gold)}
+.nav-links{display:flex;align-items:center;gap:1.75rem}
+.nl{font-size:.875rem;font-weight:500;color:var(--gr);transition:var(--tr);position:relative}
+.nl:hover,.nl.active{color:var(--pr)}
+.nl.active::after{content:'';position:absolute;bottom:-4px;left:0;width:100%;height:2px;background:var(--pr)}
+.nav-cta{padding:.55rem 1.3rem;border-radius:50px;background:var(--pr);color:var(--wh)!important;font-size:.85rem;font-weight:600;transition:var(--tr)}
+.nav-cta:hover{background:var(--pr-d)}
+.hamburger{display:none;flex-direction:column;gap:5px;padding:8px;cursor:pointer}
+.hamburger span{display:block;width:24px;height:2px;background:var(--dk);border-radius:2px;transition:var(--tr)}
+.mob-menu{position:fixed;top:0;left:0;right:0;bottom:0;background:var(--dk);z-index:999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2rem;transform:translateX(100%);transition:transform .4s ease}
+.mob-menu.open{transform:translateX(0)}
+.mob-menu .nl{font-size:1.4rem;color:var(--wh);font-family:var(--fh)}
+.mob-close{position:absolute;top:2rem;right:2rem;font-size:2rem;color:var(--wh);cursor:pointer}
+
+/* HERO BANNER */
+.menu-hero{background:linear-gradient(135deg,var(--dk) 0%,var(--dk2) 100%);padding:4rem 0;position:relative;overflow:hidden}
+.menu-hero::before{content:'';position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1920&h=400&fit=crop&q=60');background-size:cover;background-position:center;opacity:.12}
+.menu-hero-ct{position:relative;z-index:1;text-align:center}
+.menu-hero-ct .lbl{display:inline-block;font-size:.75rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:.75rem}
+.menu-hero-ct h1{color:var(--wh);margin-bottom:1rem}
+.menu-hero-ct p{color:rgba(255,255,255,.7);font-size:1.05rem;max-width:540px;margin:0 auto 2rem}
+.hero-pills{display:flex;justify-content:center;gap:.75rem;flex-wrap:wrap}
+.pill{display:inline-flex;align-items:center;gap:.4rem;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.85);padding:.4rem 1rem;border-radius:50px;font-size:.8rem;font-weight:500}
+.pill-gold{background:rgba(201,168,76,.15);border-color:rgba(201,168,76,.3);color:var(--gold)}
+
+/* MAIN LAYOUT */
+.menu-layout{display:grid;grid-template-columns:240px 1fr;gap:3rem;padding:4rem 0}
+
+/* STICKY SIDEBAR */
+.sidebar{position:sticky;top:calc(var(--nh) + 1.5rem);align-self:start;height:fit-content}
+.sidebar-card{background:var(--lt);border-radius:var(--r);padding:1.5rem;border:1px solid var(--bd)}
+.sidebar-ttl{font-family:var(--fh);font-size:1rem;font-weight:600;color:var(--dk);margin-bottom:1rem;padding-bottom:.75rem;border-bottom:1px solid var(--bd)}
+.cat-nav{display:flex;flex-direction:column;gap:.25rem}
+.cat-btn{display:flex;align-items:center;gap:.75rem;padding:.65rem .875rem;border-radius:10px;font-size:.875rem;font-weight:500;color:var(--gr);transition:var(--tr);cursor:pointer;background:transparent;text-align:left;width:100%}
+.cat-btn:hover{background:rgba(212,100,30,.06);color:var(--pr)}
+.cat-btn.active{background:rgba(212,100,30,.1);color:var(--pr);font-weight:600}
+.cat-btn .ico{font-size:1.1rem;width:24px;flex-shrink:0}
+.cat-btn .cnt{font-size:.7rem;color:var(--gr-l);margin-left:auto;background:var(--lt2);padding:.1rem .4rem;border-radius:50px}
+.cat-btn.active .cnt{background:rgba(212,100,30,.15);color:var(--pr)}
+
+.hours-box{margin-top:1.25rem;background:var(--lt);border-radius:var(--r);padding:1.25rem;border:1px solid var(--bd)}
+.hours-ttl{font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gr);margin-bottom:.75rem}
+.h-row{display:flex;justify-content:space-between;font-size:.825rem;padding:.35rem 0;border-bottom:1px solid var(--bd);color:var(--dk2)}
+.h-row:last-child{border-bottom:none}
+.h-row .val{color:var(--pr);font-weight:600}
+.service-note{margin-top:.75rem;padding:.6rem .875rem;background:rgba(212,100,30,.08);border-radius:8px;font-size:.78rem;color:var(--pr);font-weight:500;text-align:center}
+
+.cta-box{margin-top:1.25rem}
+.cta-full{display:block;width:100%;padding:.875rem;background:var(--pr);color:var(--wh);border-radius:10px;font-size:.9rem;font-weight:600;text-align:center;transition:var(--tr)}
+.cta-full:hover{background:var(--pr-d);transform:translateY(-1px)}
+.cta-wa{display:block;width:100%;padding:.75rem;background:#25D366;color:var(--wh);border-radius:10px;font-size:.85rem;font-weight:600;text-align:center;transition:var(--tr);margin-top:.5rem}
+.cta-wa:hover{background:#1da851}
+
+/* MENU CONTENT */
+.menu-content{}
+.menu-section{margin-bottom:3.5rem}
+.menu-section:last-child{margin-bottom:0}
+
+.section-header{display:flex;align-items:center;gap:1rem;margin-bottom:1.75rem;padding-bottom:1rem;border-bottom:2px solid var(--lt2)}
+.section-ico{width:52px;height:52px;background:rgba(212,100,30,.1);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0}
+.section-header h2{color:var(--dk)}
+.section-header p{color:var(--gr);font-size:.875rem;margin-top:.2rem}
+
+/* FORMULA CARDS */
+.formulas-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.25rem}
+.formula-card{background:var(--wh);border:1.5px solid var(--bd);border-radius:var(--r);overflow:hidden;transition:var(--tr);position:relative}
+.formula-card:hover{border-color:var(--pr);box-shadow:var(--sh);transform:translateY(-3px)}
+.formula-card.featured{border-color:var(--gold)}
+.formula-card.featured::before{content:'⭐ Chef recommande';position:absolute;top:.875rem;right:.875rem;background:var(--gold);color:var(--wh);font-size:.7rem;font-weight:700;padding:.2rem .65rem;border-radius:50px;letter-spacing:.03em}
+
+.fc-img{width:100%;height:160px;object-fit:cover}
+.fc-body{padding:1.25rem}
+.fc-tags{display:flex;gap:.4rem;margin-bottom:.6rem;flex-wrap:wrap}
+.tag{font-size:.68rem;font-weight:600;padding:.15rem .55rem;border-radius:50px;letter-spacing:.03em}
+.t-pop{background:rgba(212,100,30,.1);color:var(--pr)}
+.t-kids{background:rgba(59,130,246,.1);color:#2563eb}
+.t-veg{background:rgba(34,197,94,.1);color:#16a34a}
+.t-new{background:rgba(168,85,247,.1);color:#7c3aed}
+
+.fc-name{font-family:var(--fh);font-size:1.1rem;font-weight:700;color:var(--dk);margin-bottom:.5rem}
+.fc-includes{margin-bottom:1rem}
+.fc-includes .inc-ttl{font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--gr);margin-bottom:.4rem}
+.fc-includes ul{display:flex;flex-direction:column;gap:.25rem}
+.fc-includes li{font-size:.825rem;color:var(--dk2);padding-left:1rem;position:relative;line-height:1.4}
+.fc-includes li::before{content:'•';position:absolute;left:0;color:var(--pr)}
+
+.fc-footer{display:flex;align-items:center;justify-content:space-between;padding-top:.875rem;border-top:1px solid var(--lt2)}
+.fc-price{display:flex;flex-direction:column}
+.fc-price .from{font-size:.7rem;color:var(--gr);text-transform:uppercase;letter-spacing:.05em}
+.fc-price .amount{font-family:var(--fh);font-size:1.4rem;font-weight:700;color:var(--pr);line-height:1}
+.fc-price .options{font-size:.72rem;color:var(--gr);margin-top:.15rem}
+.fc-reserve{padding:.55rem 1.1rem;background:var(--pr);color:var(--wh);border-radius:50px;font-size:.8rem;font-weight:600;transition:var(--tr)}
+.fc-reserve:hover{background:var(--pr-d)}
+
+/* ACCOMPANIMENTS NOTE */
+.acc-note{background:var(--lt);border-left:3px solid var(--gold);border-radius:0 var(--r) var(--r) 0;padding:1rem 1.25rem;margin-bottom:1.75rem;font-size:.875rem;color:var(--dk2)}
+.acc-note strong{color:var(--dk);display:block;margin-bottom:.35rem;font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;color:var(--gold)}
+
+/* BOISSONS & EXTRAS TABLE */
+.simple-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.75rem}
+.sl-item{display:flex;align-items:center;justify-content:space-between;background:var(--lt);border-radius:10px;padding:.875rem 1rem;border:1px solid var(--bd);font-size:.9rem;transition:var(--tr)}
+.sl-item:hover{border-color:var(--pr);background:rgba(212,100,30,.04)}
+.sl-name{font-weight:500;color:var(--dk)}
+.sl-price{font-family:var(--fh);font-weight:700;color:var(--pr);font-size:1rem}
+
+/* PDF FALLBACK */
+.pdf-note{text-align:center;padding:2.5rem;background:var(--lt);border-radius:var(--r);border:2px dashed var(--bd)}
+.pdf-note p{color:var(--gr);font-size:.9rem;margin:.5rem 0}
+
+/* FOOTER */
+.mfooter{background:var(--dk);color:rgba(255,255,255,.6);padding:2.5rem 0;margin-top:5rem;text-align:center}
+.mfooter .nlogo{display:inline-block;font-family:var(--fh);font-size:1.4rem;font-weight:700;color:var(--wh);margin-bottom:.75rem}
+.mfooter .nlogo span{color:var(--gold)}
+.mfooter p{font-size:.85rem}
+.mfooter a{color:var(--pr-l);transition:var(--tr)}
+.mfooter a:hover{color:var(--wh)}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .menu-layout{grid-template-columns:1fr;gap:2rem}
+  .sidebar{position:static}
+  .cat-nav{flex-direction:row;flex-wrap:wrap}
+  .cat-btn{width:auto;flex:0 0 auto}
+  .cat-btn .cnt{display:none}
+  .hours-box,.cta-box{display:none}
+}
+@media(max-width:768px){
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .formulas-grid{grid-template-columns:1fr}
+}
+@media(max-width:480px){
+  .hero-pills{flex-direction:column;align-items:center}
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="container nav-in">
+    <a href="index.html" class="nlogo">Ftour <span>&</span> More</a>
+    <div class="nav-links">
+      <a href="index.html" class="nl">Accueil</a>
+      <a href="menu.html" class="nl active">Menu</a>
+      <a href="index.html#a-propos" class="nl">À propos</a>
+      <a href="index.html#contact" class="nl">Contact</a>
+      <a href="index.html#reservation" class="nl nav-cta">Réserver</a>
+    </div>
+    <div class="hamburger" id="hbg" onclick="toggleMob()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mob-menu" id="mobMenu">
+  <span class="mob-close" onclick="toggleMob()">✕</span>
+  <a href="index.html" class="nl" onclick="toggleMob()">Accueil</a>
+  <a href="menu.html" class="nl" onclick="toggleMob()">Menu</a>
+  <a href="index.html#reservation" class="nl" onclick="toggleMob()">Réservation</a>
+  <a href="index.html#contact" class="nl" onclick="toggleMob()">Contact</a>
+</div>
+
+<!-- HERO BANNER -->
+<div class="menu-hero">
+  <div class="container menu-hero-ct">
+    <div class="lbl">Notre carte</div>
+    <h1>Formules Petit-déjeuner & Brunch</h1>
+    <p>Des formules généreuses pour bien commencer la journée. Ingrédients frais, saveurs authentiques.</p>
+    <div class="hero-pills">
+      <span class="pill">🕐 Service jusqu'à 15h00</span>
+      <span class="pill">📅 Ouvert 7j/7</span>
+      <span class="pill pill-gold">🌍 Cuisine du monde</span>
+      <span class="pill">📍 Nador, Maroc</span>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+  <div class="menu-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-card">
+        <div class="sidebar-ttl">Catégories</div>
+        <div class="cat-nav" id="catNav">
+          <button class="cat-btn active" data-target="formules" onclick="scrollTo('formules',this)">
+            <span class="ico">🥐</span> Formules<span class="cnt">7</span>
+          </button>
+          <button class="cat-btn" data-target="boissons" onclick="scrollTo('boissons',this)">
+            <span class="ico">☕</span> Boissons<span class="cnt">4</span>
+          </button>
+          <button class="cat-btn" data-target="extras" onclick="scrollTo('extras',this)">
+            <span class="ico">🍳</span> À la carte<span class="cnt">3</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="hours-box">
+        <div class="hours-ttl">Service menu</div>
+        <div class="h-row"><span>Formules</span><span class="val">07:00 – 15:00</span></div>
+        <div class="h-row"><span>Été</span><span class="val">07:00 – 23:30</span></div>
+        <div class="h-row"><span>Hiver</span><span class="val">07:30 – 17:30</span></div>
+        <div class="service-note">⏰ Formules servies jusqu'à 15h00</div>
+      </div>
+
+      <div class="cta-box">
+        <a href="index.html#reservation" class="cta-full">📅 Réserver une table</a>
+        <a href="https://wa.me/212536333313" target="_blank" class="cta-wa">💬 Commander via WhatsApp</a>
+      </div>
+    </aside>
+
+    <!-- MENU CONTENT -->
+    <div class="menu-content">
+
+      <!-- SECTION FORMULES -->
+      <div class="menu-section" id="formules">
+        <div class="section-header">
+          <div class="section-ico">🥐</div>
+          <div>
+            <h2>Formules Petit-déjeuner & Brunch</h2>
+            <p>Servies jusqu'à 15h00 — Boisson chaude, jus d'orange et eau minérale inclus</p>
+          </div>
+        </div>
+
+        <div class="acc-note">
+          <strong>📌 Inclus dans toutes les formules</strong>
+          Boisson chaude au choix (café, thé, chocolat chaud) · Jus d'orange · Eau minérale · Muesli d'avoine<br>
+          <span style="margin-top:.35rem;display:inline-block">Les formules avec pain sont servies avec : <em>olives, beurre ou miel, amlou</em></span>
+        </div>
+
+        <div class="formulas-grid">
+
+          <!-- Formule Classic -->
+          <div class="formula-card">
+            <img class="fc-img" src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=600&h=320&fit=crop&q=80" alt="Formule Classic — Ftour and More Nador" loading="lazy">
+            <div class="fc-body">
+              <div class="fc-name">Formule Classic</div>
+              <div class="fc-includes">
+                <div class="inc-ttl">Contenu de la formule</div>
+                <ul>
+                  <li>Pain, beurre, miel et amlou</li>
+                  <li>Msemen maison</li>
+                  <li>Œuf au plat ou fromage</li>
+                  <li>Boisson chaude, jus d'orange, eau</li>
+                </ul>
+              </div>
+              <div class="fc-footer">
+                <div class="fc-price">
+                  <span class="from">À partir de</span>
+                  <span class="amount">39 MAD</span>
+                  <span class="options">1 pers. · 2 pers. : 47 MAD</span>
+                </div>
+                <a href="index.html#reservation" class="fc-reserve">Réserver</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Crêpe au Chocolat -->
+          <div class="formula-card">
+            <img class="fc-img" src="https://images.unsplash.com/photo-1519676867240-f03562e64548?w=600&h=320&fit=crop&q=80" alt="Crêpe au chocolat belge — Ftour and More" loading="lazy">
+            <div class="fc-body">
+              <div class="fc-tags"><span class="tag t-pop">Populaire</span></div>
+              <div class="fc-name">Crêpe au Chocolat</div>
+              <div class="fc-includes">
+                <div class="inc-ttl">Contenu de la formule</div>
+                <ul>
+                  <li>Crêpe au chocolat belge ou Nutella</li>
+                  <li>Muesli d'avoine</li>
+                  <li>Boisson chaude, jus d'orange, eau</li>
+                </ul>
+              </div>
+              <div class="fc-footer">
+                <div class="fc-price">
+                  <span class="from">À partir de</span>
+                  <span class="amount">49 MAD</span>
+                  <span class="options">Grand format : 55 MAD</span>
+                </div>
+                <a href="index.html#reservation" class="fc-reserve">Réserver</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kids Gourmand -->
+          <div class="formula-card">
+            <img class="fc-img" src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&h=320&fit=crop&q=80" alt="Kids Gourmand enfant — Ftour and More" loading="lazy">
+            <div class="fc-body">
+              <div class="fc-tags"><span class="tag t-kids">👦 Enfants</span></div>
+              <div class="fc-name">Kids Gourmand</div>
+              <div class="fc-includes">
+                <div class="inc-ttl">Contenu de la formule</div>
+                <ul>
+                  <li>Toast aux œufs et charcuterie</li>
+                  <li>Pancake au chocolat</li>
+                  <li>Croquettes croustillantes</li>
+                  <li>Muesli en cornflakes</li>
+                  <li>Boisson chaude, jus d'orange, eau</li>
+                </ul>
+              </div>
+              <div class="fc-footer">
+                <div class="fc-price">
+                  <span class="from">Prix unique</span>
+                  <span class="amount">60 MAD</span>
+                </div>
+                <a href="index.html#reservation" class="fc-reserve">Réserver</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pain Perdu -->
+          <div class="formula-card">
+            <img class="fc-img" src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600&h=320&fit=crop&q=80" alt="Pain Perdu brioche caramel — Ftour and More" loading="lazy">
+            <div class="fc-body">
+              <div class="fc-name">Pain Perdu</div>
+              <div class="fc-includes">
+                <div class="inc-ttl">Contenu de la formule</div>
+                <ul>
+                  <li>Brioche au caramel dorée</li>
+                  <li>Muesli d'avoine</li>
+                  <li>Boisson chaude, jus d'orange, eau</li>
+                </ul>
+              </div>
+              <div class="fc-footer">
+                <div class="fc-price">
+                  <span class="from">Prix unique</span>
+                  <span class="amount">60 MAD</span>
+                </div>
+                <a href="index.html#reservation" class="fc-reserve">Réserver</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- L'Andalous -->
+          <div class="formula-card featured">
+            <img class="fc-img" src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=600&h=320&fit=crop&q=80" alt="L'Andalous formule — Ftour and More" loading="lazy">
+            <div class="fc-body">
+              <div class="fc-tags"><span class="tag t-pop">Populaire</span></div>
+              <div class="fc-name">L'Andalous</div>
+              <div class="fc-includes">
+                <div class="inc-ttl">Contenu de la formule</div>
+                <ul>
+                  <li>Tortilla espagnole</li>
+                  <li>Toast grillé, tomate fraîche</li>
+                  <li>Charcuterie sélectionnée</li>
+                  <li>Pancake, chocolat chaud</li>
+                  <li>Muesli d'avoine, jus d'orange, eau</li>
+                </ul>
+              </div>
+              <div class="fc-footer">
+                <div class="fc-price">
+                  <span class="from">Prix unique</span>
+                  <span class="amount">65 MAD</span>
+                </div>
+                <a href="index.html#reservation" class="fc-reserve">Réserver</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Crêpe aux Fruits -->
+          <div class="formula-card">
+            <img class="fc-img" src="https://images.unsplash.com/photo-1590080875852-a2a2a6570b85?w=600&h=320&fit=crop&q=80" alt="Crêpe aux fruits de saison — Ftour and More" loading="lazy">
+            <div class="fc-body">
+              <div class="fc-tags"><span class="tag t-veg">🍓 Fruits</span></div>
+              <div class="fc-name">Crêpe aux Fruits</div>
+              <div class="fc-includes">
+                <div class="inc-ttl">Contenu de la formule</div>
+                <ul>
+                  <li>Crêpe aux fruits de la saison</li>
+                  <li>Muesli d'avoine</li>
+                  <li>Boisson chaude, jus d'orange, eau</li>
+                </ul>
+              </div>
+              <div class="fc-footer">
+                <div class="fc-price">
+                  <span class="from">À partir de</span>
+                  <span class="amount">65 MAD</span>
+                  <span class="options">Grand format : 70 MAD</span>
+                </div>
+                <a href="index.html#reservation" class="fc-reserve">Réserver</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hollandais -->
+          <div class="formula-card" style="grid-column:1/-1">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:0">
+              <img class="fc-img" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=320&fit=crop&q=80" alt="Hollandais formule complète — Ftour and More" loading="lazy" style="height:220px">
+              <div class="fc-body" style="display:flex;flex-direction:column;justify-content:space-between">
+                <div>
+                  <div class="fc-tags"><span class="tag t-pop">Populaire</span><span class="tag t-new">Formule Complète</span></div>
+                  <div class="fc-name" style="font-size:1.3rem">Hollandais</div>
+                  <div class="fc-includes" style="margin-top:.75rem">
+                    <div class="inc-ttl">Contenu de la formule</div>
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 1rem">
+                      <ul>
+                        <li>Pain de mie grillé</li>
+                        <li>Charcuterie fine</li>
+                        <li>Fromage râpé</li>
+                        <li>Œufs (façon au choix)</li>
+                        <li>Champignons sautés</li>
+                      </ul>
+                      <ul>
+                        <li>Pancake maison</li>
+                        <li>Chocolat chaud</li>
+                        <li>Croquettes dorées</li>
+                        <li>Muesli d'avoine</li>
+                        <li>Boisson chaude, jus, eau</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="fc-footer" style="margin-top:1rem">
+                  <div class="fc-price">
+                    <span class="from">3 options</span>
+                    <span class="amount">75 MAD</span>
+                    <span class="options">Format moyen : 80 MAD · Grand format : 85 MAD</span>
+                  </div>
+                  <a href="index.html#reservation" class="fc-reserve">Réserver</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- end formulas-grid -->
+      </div><!-- end section formules -->
+
+      <!-- SECTION BOISSONS -->
+      <div class="menu-section" id="boissons">
+        <div class="section-header">
+          <div class="section-ico">☕</div>
+          <div>
+            <h2>Boissons</h2>
+            <p>Incluses dans les formules — Également disponibles à la carte</p>
+          </div>
+        </div>
+        <div class="simple-list">
+          <div class="sl-item"><span class="sl-name">☕ Café (espresso/noisette/lait)</span><span class="sl-price">18 MAD</span></div>
+          <div class="sl-item"><span class="sl-name">🍵 Thé à la menthe</span><span class="sl-price">15 MAD</span></div>
+          <div class="sl-item"><span class="sl-name">🍊 Jus d'orange frais pressé</span><span class="sl-price">25 MAD</span></div>
+          <div class="sl-item"><span class="sl-name">🥤 Chocolat chaud maison</span><span class="sl-price">20 MAD</span></div>
+          <div class="sl-item"><span class="sl-name">💧 Eau minérale 50cl</span><span class="sl-price">8 MAD</span></div>
+          <div class="sl-item"><span class="sl-name">💧 Eau minérale 1.5L</span><span class="sl-price">12 MAD</span></div>
+        </div>
+      </div>
+
+      <!-- SECTION À LA CARTE -->
+      <div class="menu-section" id="extras">
+        <div class="section-header">
+          <div class="section-ico">🍳</div>
+          <div>
+            <h2>Suppléments à la carte</h2>
+            <p>À ajouter à votre formule selon vos envies</p>
+          </div>
+        </div>
+        <div class="simple-list">
+          <div class="sl-item"><span class="sl-name">🥚 Œufs supplémentaires (×2)</span><span class="sl-price">15 MAD</span></div>
+          <div class="sl-item"><span class="sl-name">🥞 Pancake supplémentaire</span><span class="sl-price">12 MAD</span></div>
+          <div class="sl-item"><span class="sl-name">🧀 Fromage supplémentaire</span><span class="sl-price">10 MAD</span></div>
+          <div class="sl-item"><span class="sl-name">🥓 Charcuterie supplément</span><span class="sl-price">18 MAD</span></div>
+          <div class="sl-item"><span class="sl-name">🍯 Miel / Amlou</span><span class="sl-price">8 MAD</span></div>
+          <div class="sl-item"><span class="sl-name">🍓 Fruits frais de saison</span><span class="sl-price">20 MAD</span></div>
+        </div>
+      </div>
+
+      <!-- NOTE DE BAS DE PAGE -->
+      <div class="pdf-note">
+        <div style="font-size:2rem;margin-bottom:.75rem">📋</div>
+        <p><strong>Menu complet disponible sur place</strong></p>
+        <p>Certains plats peuvent varier selon les saisons et disponibilités. N'hésitez pas à nous appeler pour toute demande spéciale.</p>
+        <p style="margin-top:.75rem">
+          <a href="tel:+212536333313" style="color:var(--pr);font-weight:600">📞 +212 536 333 313</a>
+          &nbsp;·&nbsp;
+          <a href="https://wa.me/212536333313" target="_blank" style="color:#25D366;font-weight:600">💬 WhatsApp</a>
+        </p>
+      </div>
+
+    </div><!-- end menu-content -->
+  </div><!-- end menu-layout -->
+</div><!-- end container -->
+
+<!-- FOOTER -->
+<div class="mfooter">
+  <div class="container">
+    <div class="nlogo">Ftour <span>&</span> More</div>
+    <p>Restaurant cuisine du monde — Nador, Maroc</p>
+    <p style="margin-top:.5rem">
+      <a href="index.html">Accueil</a> &nbsp;·&nbsp;
+      <a href="index.html#reservation">Réserver</a> &nbsp;·&nbsp;
+      <a href="index.html#contact">Contact</a> &nbsp;·&nbsp;
+      <a href="tel:+212536333313">+212 536 333 313</a>
+    </p>
+    <p style="margin-top:1rem;font-size:.75rem">© <span id="yr"></span> Ftour & More. Tous droits réservés.</p>
+  </div>
+</div>
+
+<script>
+function toggleMob(){document.getElementById('mobMenu').classList.toggle('open');}
+function scrollTo(id,btn){
+  document.getElementById(id).scrollIntoView({behavior:'smooth',block:'start'});
+  document.querySelectorAll('.cat-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+}
+// Highlight active cat on scroll
+const sections=['formules','boissons','extras'];
+window.addEventListener('scroll',()=>{
+  let cur='formules';
+  sections.forEach(id=>{
+    const el=document.getElementById(id);
+    if(el&&window.scrollY>=el.offsetTop-200)cur=id;
+  });
+  document.querySelectorAll('.cat-btn').forEach(b=>{
+    b.classList.toggle('active',b.dataset.target===cur);
+  });
+});
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
