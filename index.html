@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant Ftour & More — Nador | Cuisine du Monde</title>
+<meta name="description" content="Restaurant Ftour & More à Nador. Cuisine du monde, petit-déjeuner, déjeuner et dîner. Ingrédients frais, ambiance chaleureuse. Réservez votre table en ligne. Ouvert 7j/7.">
+<meta name="keywords" content="restaurant Nador, ftour and more, cuisine du monde Nador, réservation restaurant Nador, petit-déjeuner Nador, café restaurant Nador">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Restaurant Ftour & More — Nador | Cuisine du Monde">
+<meta property="og:description" content="Cuisine du monde authentique à Nador. Réservez votre table en ligne. Ouvert 7j/7.">
+<meta property="og:type" content="restaurant">
+<meta property="og:url" content="https://ftourandmore.ma">
+<meta property="og:locale" content="fr_MA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Restaurant Ftour & More — Nador">
+<link rel="canonical" href="https://ftourandmore.ma">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Ftour & More","description":"Restaurant cuisine du monde à Nador, Maroc","url":"https://ftourandmore.ma","telephone":"+212536333313","email":"contact@ftourandmore.ma","address":{"@type":"PostalAddress","addressLocality":"Nador","addressCountry":"MA"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"07:00","closes":"23:30"}],"servesCuisine":["Mondiale","Marocaine","Européenne"],"priceRange":"$$","sameAs":["https://web.facebook.com/ftourandmore","https://www.instagram.com/ftourandmorenador/"]}
+</script>
+<style>
+:root{--pr:#D4641E;--pr-d:#A94E18;--pr-l:#F0824A;--gold:#C9A84C;--dk:#1A1A1A;--dk2:#2D2D2D;--gr:#6B7280;--gr-l:#9CA3AF;--lt:#FAF7F2;--lt2:#F3EDE4;--wh:#FFFFFF;--bd:#E5DDD0;--sh:0 4px 24px rgba(0,0,0,.10);--sh-lg:0 8px 48px rgba(0,0,0,.15);--r:16px;--fh:'Playfair Display',Georgia,serif;--fb:'Inter',system-ui,sans-serif;--tr:all .3s cubic-bezier(.4,0,.2,1);--nh:80px}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--fb);color:var(--dk);background:var(--wh);line-height:1.6;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{text-decoration:none;color:inherit}
+button{cursor:pointer;border:none;background:none;font-family:inherit}
+input,select,textarea{font-family:inherit}
+ul{list-style:none}
+h1{font-family:var(--fh);font-size:clamp(2.2rem,6vw,4.5rem);line-height:1.1}
+h2{font-family:var(--fh);font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.2}
+h3{font-family:var(--fh);font-size:clamp(1.2rem,2.5vw,1.6rem);line-height:1.3}
+p{line-height:1.7}
+.container{max-width:1200px;margin:0 auto;padding:0 1.5rem}
+section{padding:6rem 0}
+.lbl{display:inline-block;font-size:.75rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--pr);margin-bottom:.75rem}
+.lbl::before{content:'— '}
+.lbl::after{content:' —'}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.875rem 2rem;border-radius:50px;font-size:.95rem;font-weight:600;transition:var(--tr);cursor:pointer;border:2px solid transparent}
+.btn-pr{background:var(--pr);color:var(--wh);border-color:var(--pr)}
+.btn-pr:hover{background:var(--pr-d);border-color:var(--pr-d);transform:translateY(-2px);box-shadow:0 8px 24px rgba(212,100,30,.35)}
+.btn-ol{background:transparent;color:var(--wh);border-color:var(--wh)}
+.btn-ol:hover{background:var(--wh);color:var(--pr);transform:translateY(-2px)}
+.fade-up{opacity:0;transform:translateY(30px);transition:opacity .6s ease,transform .6s ease}
+.fade-up.visible{opacity:1;transform:translateY(0)}
+
+/* NAV */
+.navbar{position:fixed;top:0;left:0;right:0;z-index:1000;height:var(--nh);transition:var(--tr)}
+.navbar.scrolled{background:var(--wh);box-shadow:var(--sh)}
+.navbar.scrolled .nl{color:var(--dk)}
+.navbar.scrolled .nl:hover{color:var(--pr)}
+.navbar.scrolled .nlogo{color:var(--dk)}
+.navbar.scrolled .hamburger span{background:var(--dk)}
+.nav-in{height:var(--nh);display:flex;align-items:center;justify-content:space-between}
+.nlogo{font-family:var(--fh);font-size:1.5rem;font-weight:700;color:var(--wh);letter-spacing:-.01em}
+.nlogo span{color:var(--gold)}
+.nav-links{display:flex;align-items:center;gap:2rem}
+.nl{font-size:.9rem;font-weight:500;color:rgba(255,255,255,.9);transition:var(--tr);position:relative}
+.nl::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--pr);transition:var(--tr)}
+.nl:hover::after,.nl.active::after{width:100%}
+.nav-cta{padding:.6rem 1.4rem;border-radius:50px;background:var(--pr);color:var(--wh)!important;font-size:.875rem;font-weight:600;transition:var(--tr)}
+.nav-cta:hover{background:var(--pr-d);transform:translateY(-1px)}
+.nav-cta::after{display:none}
+.hamburger{display:none;flex-direction:column;gap:5px;padding:8px;cursor:pointer}
+.hamburger span{display:block;width:24px;height:2px;background:var(--wh);border-radius:2px;transition:var(--tr)}
+.mob-menu{position:fixed;top:0;left:0;right:0;bottom:0;background:var(--dk);z-index:999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2rem;transform:translateX(100%);transition:transform .4s cubic-bezier(.4,0,.2,1)}
+.mob-menu.open{transform:translateX(0)}
+.mob-menu .nl{font-size:1.5rem;color:var(--wh);font-family:var(--fh)}
+.mob-close{position:absolute;top:2rem;right:2rem;font-size:2rem;color:var(--wh);cursor:pointer}
+
+/* HERO */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&h=1080&fit=crop&q=80');background-size:cover;background-position:center;background-attachment:fixed}
+.hero-ov{position:absolute;inset:0;background:linear-gradient(135deg,rgba(26,26,26,.88) 0%,rgba(45,45,45,.6) 100%)}
+.hero-ct{position:relative;z-index:1;padding-top:var(--nh);padding-bottom:4rem}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(212,100,30,.2);border:1px solid rgba(212,100,30,.4);color:#F0A070;padding:.4rem 1rem;border-radius:50px;font-size:.8rem;font-weight:500;letter-spacing:.05em;margin-bottom:1.5rem}
+.hero h1{color:var(--wh);margin-bottom:1.25rem}
+.hero h1 span{color:var(--gold);font-style:italic}
+.hero-sub{color:rgba(255,255,255,.75);font-size:clamp(1rem,2vw,1.2rem);max-width:520px;margin-bottom:2.5rem}
+.hero-acts{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:4rem}
+.hero-stats{display:flex;gap:3rem;flex-wrap:wrap}
+.stat-n{font-family:var(--fh);font-size:2.2rem;font-weight:700;color:var(--gold);line-height:1}
+.stat-l{font-size:.8rem;color:rgba(255,255,255,.6);margin-top:.25rem}
+.scroll-ind{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.5rem;color:rgba(255,255,255,.45);font-size:.7rem;letter-spacing:.1em;animation:bounce 2s infinite}
+@keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(8px)}}
+
+/* REASSURANCE */
+.rbar{background:var(--pr);padding:1.25rem 0}
+.rbar-in{display:flex;justify-content:center;align-items:center;gap:3rem;flex-wrap:wrap}
+.ri{display:flex;align-items:center;gap:.6rem;color:var(--wh);font-size:.875rem;font-weight:500}
+
+/* ABOUT */
+.about{background:var(--lt)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.about-imgs{position:relative}
+.aimg-main{width:100%;height:480px;object-fit:cover;border-radius:24px;box-shadow:var(--sh-lg)}
+.aimg-sm{position:absolute;bottom:-2rem;right:-2rem;width:200px;height:200px;object-fit:cover;border-radius:var(--r);border:4px solid var(--wh);box-shadow:var(--sh)}
+.about-badge{position:absolute;top:-1.5rem;left:-1.5rem;width:100px;height:100px;background:var(--pr);border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--wh);font-family:var(--fh);box-shadow:var(--sh)}
+.about-badge .n{font-size:1.8rem;font-weight:700;line-height:1}
+.about-badge .t{font-size:.65rem;text-align:center;opacity:.9}
+.about-txt h2{margin-bottom:1.5rem}
+.about-txt p{color:var(--gr);margin-bottom:1.25rem}
+.aq{border-left:3px solid var(--pr);padding-left:1.25rem;margin:1.5rem 0;font-style:italic;color:var(--dk2);font-family:var(--fh);font-size:1.05rem}
+.aq cite{display:block;font-style:normal;font-size:.8rem;color:var(--gr);margin-top:.5rem;font-family:var(--fb)}
+
+/* VALUES */
+.values{background:var(--wh)}
+.v-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:3.5rem}
+.v-card{background:var(--lt);border-radius:var(--r);padding:2.5rem;text-align:center;transition:var(--tr);border:1px solid var(--bd)}
+.v-card:hover{transform:translateY(-6px);box-shadow:var(--sh);border-color:var(--pr)}
+.v-icon{width:64px;height:64px;background:rgba(212,100,30,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem;font-size:1.6rem}
+.v-card h3{margin-bottom:.75rem;font-size:1.2rem}
+.v-card p{color:var(--gr);font-size:.9rem}
+
+/* MENU */
+.menu-s{background:var(--lt)}
+.menu-hd{text-align:center;margin-bottom:3rem}
+.menu-hd h2{margin-bottom:.75rem}
+.menu-hd p{color:var(--gr);max-width:500px;margin:0 auto}
+.menu-tabs{display:flex;justify-content:center;gap:.5rem;flex-wrap:wrap;margin-bottom:3rem}
+.mtab{padding:.6rem 1.4rem;border-radius:50px;font-size:.875rem;font-weight:500;border:2px solid var(--bd);color:var(--gr);background:var(--wh);transition:var(--tr);cursor:pointer}
+.mtab.active,.mtab:hover{background:var(--pr);border-color:var(--pr);color:var(--wh)}
+.menu-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.5rem}
+.mc{background:var(--wh);border-radius:var(--r);overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.06);transition:var(--tr);border:1px solid var(--bd)}
+.mc:hover{transform:translateY(-4px);box-shadow:var(--sh)}
+.mc-img{width:100%;height:180px;object-fit:cover}
+.mc-body{padding:1.25rem}
+.mc-tags{display:flex;gap:.4rem;margin-bottom:.75rem}
+.tag{font-size:.7rem;font-weight:600;padding:.2rem .6rem;border-radius:50px;letter-spacing:.03em}
+.tp{background:rgba(212,100,30,.1);color:var(--pr)}
+.tn{background:rgba(40,167,69,.1);color:#28a745}
+.tc{background:rgba(201,168,76,.15);color:#8B6914}
+.mc-name{font-size:1rem;font-weight:600;margin-bottom:.4rem}
+.mc-desc{color:var(--gr);font-size:.825rem;line-height:1.5;margin-bottom:1rem}
+.mc-ft{display:flex;align-items:center;justify-content:space-between}
+.mc-price{font-family:var(--fh);font-size:1.2rem;font-weight:700;color:var(--pr)}
+
+/* RESERVATION */
+.res-s{background:linear-gradient(135deg,var(--dk) 0%,var(--dk2) 100%);position:relative;overflow:hidden}
+.res-s::before{content:'';position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&h=600&fit=crop&q=60');background-size:cover;background-position:center;opacity:.08}
+.res-in{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1.5fr;gap:5rem;align-items:start}
+.res-info h2{color:var(--wh);margin-bottom:1rem}
+.res-info p{color:rgba(255,255,255,.65);margin-bottom:2rem}
+.h-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:1.5rem;margin-bottom:1.5rem}
+.h-ttl{color:var(--gold);font-size:.8rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.75rem}
+.h-row{display:flex;justify-content:space-between;color:rgba(255,255,255,.75);font-size:.875rem;padding:.4rem 0;border-bottom:1px solid rgba(255,255,255,.06)}
+.h-row:last-child{border-bottom:none}
+.c-links{display:flex;flex-direction:column;gap:.75rem}
+.c-lnk{display:flex;align-items:center;gap:.75rem;color:rgba(255,255,255,.7);font-size:.875rem;transition:var(--tr)}
+.c-lnk:hover{color:var(--pr-l)}
+.res-form{background:var(--wh);border-radius:24px;padding:2.5rem;box-shadow:var(--sh-lg)}
+.res-form h3{margin-bottom:.5rem}
+.res-form .fs{color:var(--gr);font-size:.875rem;margin-bottom:2rem}
+.fg{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.fi{display:flex;flex-direction:column;gap:.4rem}
+.fi.full{grid-column:1/-1}
+.fl{font-size:.8rem;font-weight:600;color:var(--dk2)}
+.fc{padding:.75rem 1rem;border:1.5px solid var(--bd);border-radius:8px;font-size:.9rem;color:var(--dk);background:var(--wh);transition:var(--tr);outline:none}
+.fc:focus{border-color:var(--pr);box-shadow:0 0 0 3px rgba(212,100,30,.1)}
+.fc::placeholder{color:var(--gr-l)}
+.fc.err{border-color:#dc2626}
+.err-msg{font-size:.75rem;color:#dc2626;margin-top:.2rem}
+textarea.fc{resize:vertical;min-height:80px}
+.sub-btn{margin-top:1.5rem;width:100%;padding:1rem;background:var(--pr);color:var(--wh);border:none;border-radius:8px;font-size:1rem;font-weight:600;cursor:pointer;transition:var(--tr);display:flex;align-items:center;justify-content:center;gap:.5rem}
+.sub-btn:hover{background:var(--pr-d);transform:translateY(-2px);box-shadow:0 8px 24px rgba(212,100,30,.35)}
+
+/* GALLERY */
+.gal{padding:0;overflow:hidden}
+.gal-strip{display:flex;height:280px}
+.gi{flex:1;overflow:hidden;cursor:pointer}
+.gi img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.gi:hover img{transform:scale(1.08)}
+
+/* CONTACT */
+.contact-s{background:var(--wh)}
+.cont-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:5rem;align-items:start}
+.cont-info h2{margin-bottom:1rem}
+.cont-info p{color:var(--gr);margin-bottom:2rem}
+.cc{display:flex;align-items:flex-start;gap:1rem;padding:1.25rem;background:var(--lt);border-radius:var(--r);border:1px solid var(--bd);transition:var(--tr);margin-bottom:1rem}
+.cc:hover{border-color:var(--pr)}
+.cc-ic{width:44px;height:44px;background:rgba(212,100,30,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--pr);font-size:1.1rem}
+.cc-ttl{font-weight:600;font-size:.875rem;margin-bottom:.2rem}
+.cc-val{color:var(--gr);font-size:.875rem}
+.cc-val a{color:var(--pr);transition:var(--tr)}
+.cc-val a:hover{color:var(--pr-d)}
+.map-c{border-radius:24px;overflow:hidden;height:400px;background:var(--lt2);border:1px solid var(--bd)}
+.map-c iframe{width:100%;height:100%;border:none}
+
+/* FOOTER */
+footer{background:var(--dk);color:rgba(255,255,255,.7);padding:4rem 0 2rem}
+.f-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem}
+.f-brand p{font-size:.875rem;line-height:1.7;max-width:280px;margin-top:1rem}
+.f-social{display:flex;gap:.75rem;margin-top:1.5rem}
+.fsb{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;transition:var(--tr);color:rgba(255,255,255,.7);font-size:1rem}
+.fsb:hover{background:var(--pr);color:var(--wh)}
+.f-col h4{color:var(--wh);font-family:var(--fh);font-size:1rem;margin-bottom:1.25rem}
+.f-links{display:flex;flex-direction:column;gap:.6rem}
+.f-links a{font-size:.875rem;transition:var(--tr);color:rgba(255,255,255,.6)}
+.f-links a:hover{color:var(--pr-l);padding-left:4px}
+.f-bot{border-top:1px solid rgba(255,255,255,.08);padding-top:2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.f-bot p{font-size:.8rem}
+.f-bot span{cursor:pointer}
+
+/* FLOATS */
+.float-btns{position:fixed;bottom:2rem;right:2rem;display:flex;flex-direction:column;gap:.75rem;z-index:900}
+.fb-btn{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:var(--sh);transition:var(--tr);cursor:pointer;position:relative}
+.fb-btn:hover{transform:scale(1.1)}
+.wa-f{background:#25D366;color:var(--wh)}
+.chat-f{background:var(--pr);color:var(--wh)}
+.fb-badge{position:absolute;top:-4px;right:-4px;width:18px;height:18px;background:red;border-radius:50%;font-size:.6rem;color:white;display:flex;align-items:center;justify-content:center;font-weight:700}
+
+/* CHAT */
+.chat-w{position:fixed;bottom:6.5rem;right:2rem;width:340px;background:var(--wh);border-radius:24px;box-shadow:var(--sh-lg);z-index:901;overflow:hidden;transform:scale(0) translateY(20px);transform-origin:bottom right;transition:transform .3s cubic-bezier(.34,1.56,.64,1);pointer-events:none}
+.chat-w.open{transform:scale(1) translateY(0);pointer-events:all}
+.ch-head{background:var(--pr);color:var(--wh);padding:1rem 1.25rem;display:flex;align-items:center;justify-content:space-between}
+.ch-hi{display:flex;align-items:center;gap:.75rem}
+.ch-av{width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;font-size:1.1rem}
+.ch-name{font-weight:600;font-size:.9rem}
+.ch-st{font-size:.75rem;opacity:.8}
+.ch-st::before{content:'● ';color:#4ade80}
+.ch-cl{cursor:pointer;opacity:.8;padding:.25rem;font-size:1.2rem}
+.ch-msgs{height:280px;overflow-y:auto;padding:1rem;display:flex;flex-direction:column;gap:.75rem;background:#f8f9fa}
+.ch-msgs::-webkit-scrollbar{width:4px}
+.ch-msgs::-webkit-scrollbar-thumb{background:var(--bd);border-radius:2px}
+.msg{display:flex;gap:.5rem}
+.msg.out{flex-direction:row-reverse}
+.mb{max-width:80%;padding:.6rem 1rem;border-radius:16px;font-size:.85rem;line-height:1.5}
+.msg.in .mb{background:var(--wh);color:var(--dk);border-bottom-left-radius:4px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+.msg.out .mb{background:var(--pr);color:var(--wh);border-bottom-right-radius:4px}
+.mt{font-size:.65rem;color:var(--gr-l);align-self:flex-end;margin-bottom:.2rem}
+.ch-in{padding:.75rem 1rem;border-top:1px solid var(--bd);display:flex;gap:.5rem;background:var(--wh)}
+.ch-inp{flex:1;padding:.6rem .875rem;border:1.5px solid var(--bd);border-radius:50px;font-size:.875rem;outline:none;transition:var(--tr)}
+.ch-inp:focus{border-color:var(--pr)}
+.ch-snd{width:38px;height:38px;border-radius:50%;background:var(--pr);color:var(--wh);display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;transition:var(--tr)}
+.ch-snd:hover{background:var(--pr-d)}
+
+/* TOAST */
+.toast{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%) translateY(100px);background:var(--dk);color:var(--wh);padding:.875rem 1.5rem;border-radius:50px;font-size:.9rem;font-weight:500;z-index:9999;display:flex;align-items:center;gap:.5rem;box-shadow:var(--sh-lg);transition:transform .3s ease;min-width:280px;justify-content:center}
+.toast.show{transform:translateX(-50%) translateY(0)}
+.toast.ok{background:#059669}
+.toast.er{background:#DC2626}
+
+/* ADMIN */
+.adm-ov{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:9000;display:none;align-items:flex-start;justify-content:flex-end}
+.adm-ov.open{display:flex}
+.adm-panel{width:900px;max-width:95vw;height:100vh;background:var(--wh);overflow-y:auto;box-shadow:var(--sh-lg)}
+.adm-top{background:var(--dk);color:var(--wh);padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between}
+.adm-top h2{font-size:1.1rem;font-family:var(--fb);font-weight:600}
+.adm-x{color:rgba(255,255,255,.7);font-size:1.5rem;cursor:pointer;transition:var(--tr)}
+.adm-x:hover{color:var(--wh)}
+.adm-login{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:calc(100vh - 60px);padding:2rem;text-align:center}
+.adm-login h3{margin-bottom:.5rem}
+.adm-login p{color:var(--gr);margin-bottom:2rem;font-size:.9rem}
+.adm-lf{width:100%;max-width:340px;display:flex;flex-direction:column;gap:1rem}
+.adm-content{display:none}
+.adm-content.vis{display:block}
+.adm-nav{display:flex;border-bottom:1px solid var(--bd);padding:0 1.5rem;overflow-x:auto}
+.atb{padding:1rem 1.25rem;font-size:.875rem;font-weight:500;color:var(--gr);border-bottom:2px solid transparent;transition:var(--tr);white-space:nowrap;cursor:pointer}
+.atb.active,.atb:hover{color:var(--pr);border-bottom-color:var(--pr)}
+.adm-body{padding:2rem 1.5rem}
+.a-tab{display:none}
+.a-tab.active{display:block}
+.a-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:2rem}
+.a-stat{background:var(--lt);border-radius:var(--r);padding:1.25rem;border:1px solid var(--bd)}
+.a-stat .n{font-size:2rem;font-weight:700;color:var(--pr);font-family:var(--fh)}
+.a-stat .l{color:var(--gr);font-size:.8rem;margin-top:.25rem}
+.tbl-w{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.875rem}
+thead{background:var(--lt)}
+th{text-align:left;padding:.875rem 1rem;font-weight:600;color:var(--dk2);font-size:.8rem;text-transform:uppercase;letter-spacing:.05em}
+td{padding:.875rem 1rem;border-bottom:1px solid var(--bd);color:var(--dk)}
+tr:hover td{background:var(--lt)}
+.bdg{padding:.25rem .75rem;border-radius:50px;font-size:.75rem;font-weight:600;cursor:pointer;border:none}
+.bpend{background:rgba(251,146,60,.15);color:#ea580c}
+.bconf{background:rgba(34,197,94,.15);color:#16a34a}
+.bcanc{background:rgba(239,68,68,.15);color:#dc2626}
+.sec-ttl{font-size:1.1rem;font-weight:600;margin-bottom:1.25rem;color:var(--dk)}
+
+/* RESPONSIVE */
+@media(max-width:1024px){.f-grid{grid-template-columns:1fr 1fr;gap:2rem}}
+@media(max-width:768px){
+  section{padding:4rem 0}
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .about-grid{grid-template-columns:1fr;gap:3rem}
+  .aimg-sm,.about-badge{display:none}
+  .aimg-main{height:300px}
+  .v-grid{grid-template-columns:1fr}
+  .res-in{grid-template-columns:1fr;gap:3rem}
+  .fg{grid-template-columns:1fr}
+  .cont-grid{grid-template-columns:1fr;gap:3rem}
+  .f-grid{grid-template-columns:1fr}
+  .f-bot{flex-direction:column;text-align:center}
+  .gal-strip{flex-wrap:wrap;height:auto}
+  .gi{flex:0 0 50%;height:160px}
+  .chat-w{width:calc(100vw - 2rem);right:1rem}
+  .float-btns{right:1rem;bottom:1rem}
+  .a-stats{grid-template-columns:1fr 1fr}
+}
+@media(max-width:480px){
+  .hero-acts{flex-direction:column}
+  .hero-acts .btn{justify-content:center}
+  .hero-stats{gap:1.5rem}
+  .gi{flex:0 0 100%}
+  .a-stats{grid-template-columns:1fr}
+  .menu-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar transparent" id="navbar">
+  <div class="container nav-in">
+    <a href="#accueil" class="nlogo">Ftour <span>&</span> More</a>
+    <div class="nav-links">
+      <a href="#accueil" class="nl active">Accueil</a>
+      <a href="#menu" class="nl">Menu</a>
+      <a href="#a-propos" class="nl">À propos</a>
+      <a href="#contact" class="nl">Contact</a>
+      <a href="#reservation" class="nl nav-cta">Réserver</a>
+    </div>
+    <div class="hamburger" id="hamburger" onclick="toggleMob()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mob-menu" id="mobMenu">
+  <span class="mob-close" onclick="toggleMob()">✕</span>
+  <a href="#accueil" class="nl" onclick="toggleMob()">Accueil</a>
+  <a href="#menu" class="nl" onclick="toggleMob()">Menu</a>
+  <a href="#a-propos" class="nl" onclick="toggleMob()">À propos</a>
+  <a href="#reservation" class="nl" onclick="toggleMob()">Réservation</a>
+  <a href="#contact" class="nl" onclick="toggleMob()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="accueil">
+  <div class="hero-bg"></div>
+  <div class="hero-ov"></div>
+  <div class="container hero-ct">
+    <div class="hero-badge">🌍 Restaurant · Nador, Maroc</div>
+    <h1>On vous livre le <span>monde</span><br>à table</h1>
+    <p class="hero-sub">En servant une table des 4 coins du monde — ingrédients frais, saveurs authentiques, ambiance chaleureuse.</p>
+    <div class="hero-acts">
+      <a href="#menu" class="btn btn-pr">🍽️ Voir le menu</a>
+      <a href="#reservation" class="btn btn-ol">📅 Réserver une table</a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="stat-n">7j/7</div><div class="stat-l">Ouvert toute la semaine</div></div>
+      <div><div class="stat-n">07:00</div><div class="stat-l">Ouverture dès le matin</div></div>
+      <div><div class="stat-n">5★</div><div class="stat-l">Cuisine du monde</div></div>
+    </div>
+  </div>
+  <div class="scroll-ind">↓ Découvrir</div>
+</section>
+
+<!-- REASSURANCE BAR -->
+<div class="rbar">
+  <div class="container rbar-in">
+    <div class="ri">✅ Ingrédients frais</div>
+    <div class="ri">🌍 Cuisine du monde</div>
+    <div class="ri">📅 Réservation en ligne</div>
+    <div class="ri">⏰ Ouvert 7j/7</div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about fade-up" id="a-propos">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-imgs">
+        <img class="aimg-main" src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&h=600&fit=crop&q=80" alt="Intérieur du restaurant Ftour and More à Nador">
+        <img class="aimg-sm" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=400&fit=crop&q=80" alt="Plats du restaurant Ftour and More">
+        <div class="about-badge"><span class="n">4★</span><span class="t">Nador</span></div>
+      </div>
+      <div class="about-txt">
+        <span class="lbl">Notre histoire</span>
+        <h2>Est gourmande à souhait</h2>
+        <p>Fondé avec passion à Nador, <strong>Ftour & More</strong> est né d'une envie simple : offrir aux habitants et visiteurs de Nador une expérience culinaire qui voyage. Du petit-déjeuner généreux au dîner raffiné, chaque plat est préparé avec des ingrédients soigneusement sélectionnés.</p>
+        <p>Notre équipe met tout son cœur pour que chaque repas soit un moment de partage, de gourmandise et de découverte. <em>Plus de gourmandise, plus de goût, plus de partage, mais surtout plus d'amour !</em></p>
+        <blockquote class="aq">
+          "On ne peut pas bien penser, bien aimer, bien dormir, si l'on n'a pas bien mangé."
+          <cite>— Virginia Woolf</cite>
+        </blockquote>
+        <a href="#reservation" class="btn btn-pr" style="margin-top:.5rem">Réserver une table</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="values fade-up">
+  <div class="container">
+    <div style="text-align:center">
+      <span class="lbl">Pourquoi nous choisir</span>
+      <h2>Justement, pour 3 bonnes raisons</h2>
+    </div>
+    <div class="v-grid">
+      <div class="v-card">
+        <div class="v-icon">🌿</div>
+        <h3>Pour la fraîcheur</h3>
+        <p>Nous sélectionnons chaque ingrédient avec soin. Produits locaux, saison respectée, fraîcheur garantie dans chaque assiette.</p>
+      </div>
+      <div class="v-card">
+        <div class="v-icon">🌍</div>
+        <h3>Le monde à votre table</h3>
+        <p>De la cuisine marocaine aux saveurs internationales, notre menu vous fait voyager sans quitter votre chaise à Nador.</p>
+      </div>
+      <div class="v-card">
+        <div class="v-icon">☀️</div>
+        <h3>Breakfast society</h3>
+        <p>Le petit-déjeuner est sacré chez nous. Formules généreuses, options variées, ambiance cosy dès l'ouverture à 07h00.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="menu-s fade-up" id="menu">
+  <div class="container">
+    <div class="menu-hd">
+      <span class="lbl">Notre carte</span>
+      <h2>Un menu qui vous fait voyager</h2>
+      <p>Des saveurs du monde entier, préparées avec amour et ingrédients frais chaque jour.</p>
+    </div>
+    <div class="menu-tabs">
+      <button class="mtab active" data-cat="all">Tout voir</button>
+      <button class="mtab" data-cat="breakfast">🥐 Petit-déjeuner</button>
+      <button class="mtab" data-cat="plat">🍽️ Plats</button>
+      <button class="mtab" data-cat="sandwich">🥪 Sandwichs</button>
+      <button class="mtab" data-cat="dessert">🍰 Desserts</button>
+      <button class="mtab" data-cat="boisson">☕ Boissons</button>
+    </div>
+    <div class="menu-grid" id="menuGrid"></div>
+  </div>
+</section>
+
+<!-- RESERVATION -->
+<section class="res-s fade-up" id="reservation">
+  <div class="container">
+    <div class="res-in">
+      <div class="res-info">
+        <span class="lbl" style="color:var(--gold)">Réservation</span>
+        <h2>Vous êtes à une étape près de vous régaler</h2>
+        <p>Réservez votre table en ligne en quelques secondes. Nous vous confirmons sous 24h.</p>
+        <div class="h-card">
+          <div class="h-ttl">Horaires d'ouverture</div>
+          <div class="h-row"><span>Été (avr. – oct.)</span><span>07:00 – 23:30</span></div>
+          <div class="h-row"><span>Hiver (nov. – mars)</span><span>07:30 – 17:30</span></div>
+          <div class="h-row"><span>Tous les jours</span><span>7j/7</span></div>
+        </div>
+        <div class="c-links">
+          <a href="tel:+212536333313" class="c-lnk">📞 +212 536 333 313</a>
+          <a href="mailto:contact@ftourandmore.ma" class="c-lnk">✉️ contact@ftourandmore.ma</a>
+          <a href="https://wa.me/212536333313" target="_blank" class="c-lnk">💬 WhatsApp</a>
+        </div>
+      </div>
+      <div class="res-form">
+        <h3>Réserver une table</h3>
+        <p class="fs">Remplissez le formulaire et nous vous contacterons pour confirmation.</p>
+        <form id="resForm" novalidate>
+          <div class="fg">
+            <div class="fi"><label class="fl">Prénom *</label><input class="fc" id="rPrenom" placeholder="Votre prénom" type="text"></div>
+            <div class="fi"><label class="fl">Nom *</label><input class="fc" id="rNom" placeholder="Votre nom" type="text"></div>
+            <div class="fi"><label class="fl">Téléphone *</label><input class="fc" id="rTel" placeholder="+212 6XX XXX XXX" type="tel"></div>
+            <div class="fi"><label class="fl">Email</label><input class="fc" id="rEmail" placeholder="votre@email.com" type="email"></div>
+            <div class="fi"><label class="fl">Date *</label><input class="fc" id="rDate" type="date"></div>
+            <div class="fi"><label class="fl">Heure *</label>
+              <select class="fc" id="rHeure">
+                <option value="">Choisir une heure</option>
+                <option>07:00</option><option>07:30</option><option>08:00</option><option>08:30</option>
+                <option>09:00</option><option>09:30</option><option>10:00</option><option>10:30</option>
+                <option>11:00</option><option>11:30</option><option>12:00</option><option>12:30</option>
+                <option>13:00</option><option>13:30</option><option>14:00</option><option>14:30</option>
+                <option>15:00</option><option>15:30</option><option>16:00</option><option>16:30</option>
+                <option>17:00</option><option>17:30</option><option>18:00</option><option>18:30</option>
+                <option>19:00</option><option>19:30</option><option>20:00</option><option>20:30</option>
+                <option>21:00</option><option>21:30</option><option>22:00</option><option>22:30</option>
+                <option>23:00</option>
+              </select>
+            </div>
+            <div class="fi"><label class="fl">Personnes *</label>
+              <select class="fc" id="rPersonnes">
+                <option value="">Nombre</option>
+                <option>1</option><option>2</option><option>3</option><option>4</option>
+                <option>5</option><option>6</option><option>7</option><option>8</option>
+                <option>9</option><option>10</option><option value="banquet">Banquet (+10)</option>
+              </select>
+            </div>
+            <div class="fi"><label class="fl">Occasion</label>
+              <select class="fc" id="rOccasion">
+                <option value="">Occasion spéciale ?</option>
+                <option>Anniversaire</option><option>Repas d'affaires</option>
+                <option>Repas romantique</option><option>Famille</option><option>Autre</option>
+              </select>
+            </div>
+            <div class="fi full"><label class="fl">Message</label><textarea class="fc" id="rMsg" placeholder="Demandes spéciales, allergies, préférences..."></textarea></div>
+          </div>
+          <button type="submit" class="sub-btn">✅ Confirmer la réservation</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<div class="gal">
+  <div class="gal-strip">
+    <div class="gi"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=400&fit=crop&q=80" alt="Ambiance restaurant Nador"></div>
+    <div class="gi"><img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=600&h=400&fit=crop&q=80" alt="Plat gastronomique Ftour and More"></div>
+    <div class="gi"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&h=400&fit=crop&q=80" alt="Salle du restaurant"></div>
+    <div class="gi"><img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600&h=400&fit=crop&q=80" alt="Petit-déjeuner marocain"></div>
+    <div class="gi"><img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=600&h=400&fit=crop&q=80" alt="Cuisine monde Nador"></div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section class="contact-s fade-up" id="contact">
+  <div class="container">
+    <div class="cont-grid">
+      <div class="cont-info">
+        <span class="lbl">Nous trouver</span>
+        <h2>Venez nous rendre visite</h2>
+        <p>Nous sommes ouverts 7j/7 pour vous accueillir dans un cadre chaleureux. N'hésitez pas à nous contacter ou à réserver en ligne.</p>
+        <div class="cc"><div class="cc-ic">📍</div><div><div class="cc-ttl">Adresse</div><div class="cc-val">Nador, Maroc</div></div></div>
+        <div class="cc"><div class="cc-ic">📞</div><div><div class="cc-ttl">Téléphone</div><div class="cc-val"><a href="tel:+212536333313">+212 536 333 313</a></div></div></div>
+        <div class="cc"><div class="cc-ic">✉️</div><div><div class="cc-ttl">Email</div><div class="cc-val"><a href="mailto:contact@ftourandmore.ma">contact@ftourandmore.ma</a></div></div></div>
+        <div class="cc"><div class="cc-ic">⏰</div><div><div class="cc-ttl">Horaires</div><div class="cc-val">Lun – Dim : 07:00 – 23:30</div></div></div>
+        <div class="cc"><div class="cc-ic">💬</div><div><div class="cc-ttl">WhatsApp</div><div class="cc-val"><a href="https://wa.me/212536333313" target="_blank">Envoyer un message</a></div></div></div>
+      </div>
+      <div>
+        <div class="map-c">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26352.69!2d-2.9330!3d35.1681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7562b3b4d4cfb3%3A0x8c2b1b48d8f6b6e!2sNador!5e0!3m2!1sfr!2sma!4v1680000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localisation restaurant Ftour and More Nador"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="f-grid">
+      <div class="f-brand">
+        <div class="nlogo" style="font-family:var(--fh);font-size:1.5rem;font-weight:700;color:var(--wh)">Ftour <span style="color:var(--gold)">&</span> More</div>
+        <p>Restaurant cuisine du monde à Nador, Maroc. Ingrédients frais, saveurs authentiques, ambiance chaleureuse. Plus de gourmandise, plus de partage, plus d'amour.</p>
+        <div class="f-social">
+          <a href="https://web.facebook.com/ftourandmore" target="_blank" class="fsb" aria-label="Facebook Ftour and More">f</a>
+          <a href="https://www.instagram.com/ftourandmorenador/" target="_blank" class="fsb" aria-label="Instagram Ftour and More">ig</a>
+          <a href="https://wa.me/212536333313" target="_blank" class="fsb" aria-label="WhatsApp Ftour and More">wa</a>
+        </div>
+      </div>
+      <div class="f-col">
+        <h4>Navigation</h4>
+        <div class="f-links">
+          <a href="#accueil">Accueil</a>
+          <a href="#menu">Notre menu</a>
+          <a href="#a-propos">À propos</a>
+          <a href="#reservation">Réservation</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="f-col">
+        <h4>Menu rapide</h4>
+        <div class="f-links">
+          <a href="#menu">Petit-déjeuner</a>
+          <a href="#menu">Plats du monde</a>
+          <a href="#menu">Sandwichs</a>
+          <a href="#menu">Desserts</a>
+          <a href="#menu">Boissons</a>
+        </div>
+      </div>
+      <div class="f-col">
+        <h4>Horaires</h4>
+        <div class="f-links" style="gap:.4rem">
+          <span style="color:rgba(255,255,255,.9);font-size:.875rem">Lundi – Dimanche</span>
+          <span style="color:var(--gold);font-size:.875rem">Été : 07:00 – 23:30</span>
+          <span style="color:var(--gold);font-size:.875rem">Hiver : 07:30 – 17:30</span>
+          <a href="tel:+212536333313" style="color:rgba(255,255,255,.7);font-size:.875rem;margin-top:.5rem">📞 +212 536 333 313</a>
+        </div>
+      </div>
+    </div>
+    <div class="f-bot">
+      <p>© <span id="yr"></span> <span id="cpclick" title="Administration">Ftour & More</span>. Tous droits réservés.</p>
+      <p>Fait avec ❤️ à Nador, Maroc</p>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<div class="float-btns">
+  <a href="https://wa.me/212536333313" target="_blank" class="fb-btn wa-f" title="WhatsApp" aria-label="Contacter via WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.117 1.528 5.845L.057 23.944l6.265-1.644A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.792 9.792 0 01-4.992-1.364l-.358-.213-3.716.975.993-3.63-.234-.374A9.786 9.786 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+  </a>
+  <div class="fb-btn chat-f" id="chatToggle" title="Chat" onclick="toggleChat()" aria-label="Ouvrir le chat">
+    <div class="fb-badge" id="chatBadge" style="display:none">1</div>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+  </div>
+</div>
+
+<!-- CHAT WIDGET -->
+<div class="chat-w" id="chatWidget">
+  <div class="ch-head">
+    <div class="ch-hi">
+      <div class="ch-av">👨‍🍳</div>
+      <div><div class="ch-name">Ftour & More</div><div class="ch-st">En ligne</div></div>
+    </div>
+    <span class="ch-cl" onclick="toggleChat()">✕</span>
+  </div>
+  <div class="ch-msgs" id="chatMsgs"></div>
+  <div class="ch-in">
+    <input class="ch-inp" id="chatInput" placeholder="Votre message..." onkeypress="if(event.key==='Enter')sendMsg()">
+    <div class="ch-snd" onclick="sendMsg()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<!-- ADMIN OVERLAY -->
+<div class="adm-ov" id="admOv" onclick="if(event.target===this)closeAdmin()">
+  <div class="adm-panel" id="admPanel">
+    <div class="adm-top">
+      <h2>⚙️ Espace Administrateur — Ftour & More</h2>
+      <span class="adm-x" onclick="closeAdmin()">✕</span>
+    </div>
+    <div id="admLogin" class="adm-login">
+      <div style="font-size:3rem;margin-bottom:1rem">🔐</div>
+      <h3>Accès administrateur</h3>
+      <p>Entrez le mot de passe pour accéder au tableau de bord.<br><small style="color:var(--gr-l)">(Démo : admin2026)</small></p>
+      <div class="adm-lf">
+        <input class="fc" type="password" id="admPwd" placeholder="Mot de passe" onkeypress="if(event.key==='Enter')admLogin()">
+        <button class="sub-btn" onclick="admLogin()">Se connecter</button>
+      </div>
+    </div>
+    <div id="admContent" class="adm-content">
+      <div class="adm-nav">
+        <button class="atb active" onclick="showATab('dash',this)">📊 Dashboard</button>
+        <button class="atb" onclick="showATab('reserv',this)">📅 Réservations</button>
+        <button class="atb" onclick="showATab('msgs',this)">💬 Messages</button>
+        <button class="atb" onclick="showATab('menu',this)">🍽️ Menu</button>
+      </div>
+      <div class="adm-body">
+        <!-- DASHBOARD -->
+        <div class="a-tab active" id="a-dash">
+          <div class="a-stats">
+            <div class="a-stat"><div class="n" id="aStatRes">0</div><div class="l">Réservations totales</div></div>
+            <div class="a-stat"><div class="n" id="aStatMsg">0</div><div class="l">Messages reçus</div></div>
+            <div class="a-stat"><div class="n" id="aStatPend">0</div><div class="l">En attente</div></div>
+          </div>
+          <p style="color:var(--gr);font-size:.9rem">Bienvenue dans votre espace d'administration. Gérez vos réservations, messages et menu depuis les onglets ci-dessus.</p>
+        </div>
+        <!-- RESERVATIONS -->
+        <div class="a-tab" id="a-reserv">
+          <div class="sec-ttl">Réservations</div>
+          <div class="tbl-w"><table>
+            <thead><tr><th>Date</th><th>Nom</th><th>Tél.</th><th>Pers.</th><th>Heure</th><th>Statut</th></tr></thead>
+            <tbody id="resTbl"></tbody>
+          </table></div>
+        </div>
+        <!-- MESSAGES -->
+        <div class="a-tab" id="a-msgs">
+          <div class="sec-ttl">Messages chat</div>
+          <div class="tbl-w"><table>
+            <thead><tr><th>Heure</th><th>Message</th><th>Type</th></tr></thead>
+            <tbody id="msgTbl"></tbody>
+          </table></div>
+        </div>
+        <!-- MENU ADMIN -->
+        <div class="a-tab" id="a-menu">
+          <div class="sec-ttl">Gestion du menu</div>
+          <div id="menuAdmin"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── MENU DATA ─────────────────────────────────────────────────────────────
+const MENU = [
+  {cat:'breakfast',name:'Ftour Complet',desc:'Pain, beurre, miel, amlou, msemen, œuf, fromage, thé ou café',price:'55 MAD',tag:'tp',tagLabel:'Populaire',img:'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=280&fit=crop&q=80'},
+  {cat:'breakfast',name:'Œufs Bénédicte',desc:'Œufs pochés, sauce hollandaise, toast grillé, jambon',price:'45 MAD',tag:'tn',tagLabel:'Nouveau',img:'https://images.unsplash.com/photo-1525351484163-7529414344d8?w=400&h=280&fit=crop&q=80'},
+  {cat:'breakfast',name:'Pancakes au Miel',desc:'Pancakes maison, miel d\'acacia, fruits frais de saison',price:'40 MAD',tag:'',tagLabel:'',img:'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&h=280&fit=crop&q=80'},
+  {cat:'breakfast',name:'Avocado Toast',desc:'Pain au levain, avocat frais, œuf poché, tomates cerises',price:'50 MAD',tag:'tn',tagLabel:'Nouveau',img:'https://images.unsplash.com/photo-1541519227354-08fa5d50c820?w=400&h=280&fit=crop&q=80'},
+  {cat:'plat',name:'Tajine Poulet Citron',desc:'Poulet fermier, citron confit, olives vertes, épices maison',price:'85 MAD',tag:'tp',tagLabel:'Populaire',img:'https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=280&fit=crop&q=80'},
+  {cat:'plat',name:'Couscous Royal',desc:'Agneau tendre, merguez grillées, légumes de saison',price:'95 MAD',tag:'tc',tagLabel:'Chef',img:'https://images.unsplash.com/photo-1541518763669-27fef04b14ea?w=400&h=280&fit=crop&q=80'},
+  {cat:'plat',name:'Burger Artisanal',desc:'Bœuf 100% local, cheddar fondu, sauce secrète maison',price:'75 MAD',tag:'tp',tagLabel:'Populaire',img:'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=280&fit=crop&q=80'},
+  {cat:'plat',name:'Pâtes Carbonara',desc:'Spaghetti al dente, lardons fumés, parmesan, crème fraîche',price:'70 MAD',tag:'',tagLabel:'',img:'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&h=280&fit=crop&q=80'},
+  {cat:'sandwich',name:'Club Sandwich',desc:'Poulet grillé, bacon, laitue, tomate, mayonnaise maison',price:'55 MAD',tag:'tp',tagLabel:'Populaire',img:'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=400&h=280&fit=crop&q=80'},
+  {cat:'sandwich',name:'Panini Poulet Pesto',desc:'Poulet grillé, pesto basilic, mozzarella fondante',price:'45 MAD',tag:'',tagLabel:'',img:'https://images.unsplash.com/photo-1509722747041-616f39b57569?w=400&h=280&fit=crop&q=80'},
+  {cat:'sandwich',name:'Wrap Mexicain',desc:'Bœuf épicé, guacamole maison, poivrons grillés, crème',price:'50 MAD',tag:'tn',tagLabel:'Nouveau',img:'https://images.unsplash.com/photo-1562059390-a761a084768e?w=400&h=280&fit=crop&q=80'},
+  {cat:'dessert',name:'Cheesecake Maison',desc:'Base biscuit sablé, crème onctueuse, coulis fruits rouges',price:'40 MAD',tag:'tc',tagLabel:'Chef',img:'https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=280&fit=crop&q=80'},
+  {cat:'dessert',name:'Crêpe Suzette',desc:'Crêpe fine, sauce orange parfumée au Grand Marnier',price:'35 MAD',tag:'',tagLabel:'',img:'https://images.unsplash.com/photo-1519676867240-f03562e64548?w=400&h=280&fit=crop&q=80'},
+  {cat:'dessert',name:'Tiramisu',desc:'Mascarpone onctueux, espresso fort, cacao en poudre',price:'38 MAD',tag:'tp',tagLabel:'Populaire',img:'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&h=280&fit=crop&q=80'},
+  {cat:'dessert',name:'Baghrir au Miel',desc:'Crêpe mille trous marocaine, beurre fondu et miel naturel',price:'25 MAD',tag:'',tagLabel:'',img:'https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=400&h=280&fit=crop&q=80'},
+  {cat:'boisson',name:'Café Maison',desc:'Espresso, noisette, allongé ou au lait — selon votre goût',price:'18 MAD',tag:'',tagLabel:'',img:'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=280&fit=crop&q=80'},
+  {cat:'boisson',name:'Thé à la Menthe',desc:'Thé marocain traditionnel, fraîchement préparé',price:'15 MAD',tag:'tp',tagLabel:'Populaire',img:'https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&h=280&fit=crop&q=80'},
+  {cat:'boisson',name:'Jus d\'Orange Frais',desc:'Pressé à la minute, 100% naturel, sans sucre ajouté',price:'25 MAD',tag:'',tagLabel:'',img:'https://images.unsplash.com/photo-1534353436294-0dbd4bdac845?w=400&h=280&fit=crop&q=80'},
+  {cat:'boisson',name:'Smoothie du Jour',desc:'Fruits de saison mixés, vitaminé, sans sucre ajouté',price:'30 MAD',tag:'tn',tagLabel:'Nouveau',img:'https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=400&h=280&fit=crop&q=80'},
+];
+
+// ── RENDER MENU ────────────────────────────────────────────────────────────
+function renderMenu(cat='all'){
+  const grid=document.getElementById('menuGrid');
+  const items=cat==='all'?MENU:MENU.filter(i=>i.cat===cat);
+  grid.innerHTML=items.map(i=>`
+    <div class="mc">
+      <img class="mc-img" src="${i.img}" alt="${i.name} — Ftour and More Nador" loading="lazy">
+      <div class="mc-body">
+        ${i.tag?`<div class="mc-tags"><span class="tag ${i.tag}">${i.tagLabel}</span></div>`:''}
+        <div class="mc-name">${i.name}</div>
+        <div class="mc-desc">${i.desc}</div>
+        <div class="mc-ft"><span class="mc-price">${i.price}</span></div>
+      </div>
+    </div>`).join('');
+}
+renderMenu();
+
+document.querySelectorAll('.mtab').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.mtab').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    renderMenu(btn.dataset.cat);
+  });
+});
+
+// ── NAVBAR ────────────────────────────────────────────────────────────────
+const nav=document.getElementById('navbar');
+window.addEventListener('scroll',()=>{
+  nav.classList.toggle('scrolled',window.scrollY>80);
+  // Active link
+  const secs=['accueil','menu','a-propos','reservation','contact'];
+  let cur='';
+  secs.forEach(id=>{const s=document.getElementById(id);if(s&&window.scrollY>=s.offsetTop-120)cur=id;});
+  document.querySelectorAll('.nl').forEach(l=>{
+    l.classList.toggle('active',l.getAttribute('href')==='#'+cur);
+  });
+});
+
+function toggleMob(){document.getElementById('mobMenu').classList.toggle('open');}
+
+// ── RESERVATION FORM ──────────────────────────────────────────────────────
+const today=new Date().toISOString().split('T')[0];
+document.getElementById('rDate').min=today;
+
+document.getElementById('resForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const fields=[
+    {id:'rPrenom',msg:'Prénom requis'},
+    {id:'rNom',msg:'Nom requis'},
+    {id:'rTel',msg:'Téléphone requis'},
+    {id:'rDate',msg:'Date requise'},
+    {id:'rHeure',msg:'Heure requise'},
+    {id:'rPersonnes',msg:'Nombre de personnes requis'},
+  ];
+  let ok=true;
+  document.querySelectorAll('.err-msg').forEach(e=>e.remove());
+  document.querySelectorAll('.fc.err').forEach(e=>e.classList.remove('err'));
+  fields.forEach(f=>{
+    const el=document.getElementById(f.id);
+    if(!el.value.trim()){
+      el.classList.add('err');
+      const em=document.createElement('div');
+      em.className='err-msg';em.textContent=f.msg;
+      el.parentNode.appendChild(em);ok=false;
+    }
+  });
+  if(!ok)return;
+  const res={
+    id:Date.now(),
+    prenom:document.getElementById('rPrenom').value,
+    nom:document.getElementById('rNom').value,
+    tel:document.getElementById('rTel').value,
+    email:document.getElementById('rEmail').value,
+    date:document.getElementById('rDate').value,
+    heure:document.getElementById('rHeure').value,
+    personnes:document.getElementById('rPersonnes').value,
+    occasion:document.getElementById('rOccasion').value,
+    msg:document.getElementById('rMsg').value,
+    status:'pending',
+    created:new Date().toLocaleString('fr-FR')
+  };
+  const reservations=JSON.parse(localStorage.getItem('ftm_res')||'[]');
+  reservations.push(res);
+  localStorage.setItem('ftm_res',JSON.stringify(reservations));
+  document.getElementById('resForm').reset();
+  showToast('✅ Réservation confirmée ! Nous vous contactons sous 24h.','ok');
+});
+
+// ── CHAT ──────────────────────────────────────────────────────────────────
+let chatOpen=false;
+const welcomeMsg={type:'in',text:'Bonjour ! 👋 Comment puis-je vous aider ? Réservation, menu, informations... je suis là !',time:new Date().toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'})};
+
+function getChatMsgs(){
+  const msgs=JSON.parse(localStorage.getItem('ftm_chat')||'[]');
+  if(msgs.length===0){
+    msgs.push(welcomeMsg);
+    localStorage.setItem('ftm_chat',JSON.stringify(msgs));
+  }
+  return msgs;
+}
+
+function renderChat(){
+  const msgs=getChatMsgs();
+  const el=document.getElementById('chatMsgs');
+  el.innerHTML=msgs.map(m=>`
+    <div class="msg ${m.type==='out'?'out':'in'}">
+      <div class="mb">${m.text}</div>
+      <div class="mt">${m.time}</div>
+    </div>`).join('');
+  el.scrollTop=el.scrollHeight;
+}
+
+function toggleChat(){
+  chatOpen=!chatOpen;
+  document.getElementById('chatWidget').classList.toggle('open',chatOpen);
+  document.getElementById('chatBadge').style.display='none';
+  if(chatOpen)renderChat();
+}
+
+function sendMsg(){
+  const inp=document.getElementById('chatInput');
+  const txt=inp.value.trim();
+  if(!txt)return;
+  const msgs=getChatMsgs();
+  const now=new Date().toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'});
+  msgs.push({type:'out',text:txt,time:now});
+  localStorage.setItem('ftm_chat',JSON.stringify(msgs));
+  inp.value='';
+  renderChat();
+  setTimeout(()=>{
+    const replies=[
+      'Merci pour votre message ! Notre équipe vous répondra très bientôt. 😊',
+      'Bien reçu ! Pour réserver une table, utilisez notre formulaire en ligne.',
+      'Merci de nous contacter. Appelez-nous au +212 536 333 313 pour plus d\'infos.',
+    ];
+    const reply=replies[Math.floor(Math.random()*replies.length)];
+    const m=JSON.parse(localStorage.getItem('ftm_chat')||'[]');
+    m.push({type:'in',text:reply,time:new Date().toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'})});
+    localStorage.setItem('ftm_chat',JSON.stringify(m));
+    renderChat();
+  },1500);
+}
+
+// Show chat badge after 3s
+setTimeout(()=>{
+  if(!chatOpen)document.getElementById('chatBadge').style.display='flex';
+},3000);
+
+// ── TOAST ─────────────────────────────────────────────────────────────────
+function showToast(msg,type=''){
+  const t=document.getElementById('toast');
+  t.textContent=msg;
+  t.className='toast show'+(type?' '+type:'');
+  setTimeout(()=>t.classList.remove('show'),4000);
+}
+
+// ── ADMIN ─────────────────────────────────────────────────────────────────
+let cpClicks=0,cpTimer=null;
+document.getElementById('cpclick').addEventListener('click',()=>{
+  cpClicks++;
+  clearTimeout(cpTimer);
+  cpTimer=setTimeout(()=>cpClicks=0,1500);
+  if(cpClicks>=3){cpClicks=0;openAdmin();}
+});
+
+function openAdmin(){document.getElementById('admOv').classList.add('open');}
+function closeAdmin(){document.getElementById('admOv').classList.remove('open');}
+
+function admLogin(){
+  const pwd=document.getElementById('admPwd').value;
+  if(pwd==='admin2026'){
+    document.getElementById('admLogin').style.display='none';
+    document.getElementById('admContent').classList.add('vis');
+    refreshAdminData();
+  }else{
+    showToast('❌ Mot de passe incorrect','er');
+  }
+}
+
+function refreshAdminData(){
+  const res=JSON.parse(localStorage.getItem('ftm_res')||'[]');
+  const msgs=JSON.parse(localStorage.getItem('ftm_chat')||'[]').filter(m=>m.type==='out');
+  const pend=res.filter(r=>r.status==='pending').length;
+  document.getElementById('aStatRes').textContent=res.length;
+  document.getElementById('aStatMsg').textContent=msgs.length;
+  document.getElementById('aStatPend').textContent=pend;
+
+  // Reservations table
+  const rt=document.getElementById('resTbl');
+  rt.innerHTML=res.length===0?'<tr><td colspan="6" style="text-align:center;color:var(--gr)">Aucune réservation</td></tr>':
+    res.map((r,i)=>`<tr>
+      <td>${r.date}</td>
+      <td>${r.prenom} ${r.nom}</td>
+      <td>${r.tel}</td>
+      <td>${r.personnes}</td>
+      <td>${r.heure}</td>
+      <td><button class="bdg b${r.status==='pending'?'pend':r.status==='confirmed'?'conf':'canc'}" onclick="cycleStatus(${i})">${r.status==='pending'?'En attente':r.status==='confirmed'?'Confirmé':'Annulé'}</button></td>
+    </tr>`).join('');
+
+  // Messages table
+  const allMsgs=JSON.parse(localStorage.getItem('ftm_chat')||'[]');
+  const mt=document.getElementById('msgTbl');
+  mt.innerHTML=allMsgs.length===0?'<tr><td colspan="3" style="text-align:center;color:var(--gr)">Aucun message</td></tr>':
+    allMsgs.map(m=>`<tr><td>${m.time}</td><td>${m.text}</td><td><span class="bdg ${m.type==='out'?'bpend':'bconf'}">${m.type==='out'?'Client':'Restaurant'}</span></td></tr>`).join('');
+
+  // Menu admin
+  const ma=document.getElementById('menuAdmin');
+  ma.innerHTML='<div class="tbl-w"><table><thead><tr><th>Plat</th><th>Catégorie</th><th>Prix</th></tr></thead><tbody>'+
+    MENU.map(item=>`<tr><td>${item.name}</td><td>${item.cat}</td><td><input style="border:1px solid var(--bd);border-radius:4px;padding:.3rem .5rem;font-size:.85rem;width:80px" value="${item.price}"></td></tr>`).join('')+
+  '</tbody></table></div><p style="color:var(--gr);font-size:.8rem;margin-top:.75rem">💡 Modifiez les prix directement dans le tableau (démo locale).</p>';
+}
+
+function cycleStatus(idx){
+  const res=JSON.parse(localStorage.getItem('ftm_res')||'[]');
+  const s=res[idx].status;
+  res[idx].status=s==='pending'?'confirmed':s==='confirmed'?'cancelled':'pending';
+  localStorage.setItem('ftm_res',JSON.stringify(res));
+  refreshAdminData();
+}
+
+function showATab(id,btn){
+  document.querySelectorAll('.a-tab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.atb').forEach(b=>b.classList.remove('active'));
+  document.getElementById('a-'+id).classList.add('active');
+  btn.classList.add('active');
+  refreshAdminData();
+}
+
+// ── SCROLL ANIMATIONS ─────────────────────────────────────────────────────
+const obs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});
+},{threshold:.1});
+document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
+
+// ── MISC ──────────────────────────────────────────────────────────────────
+document.getElementById('yr').textContent=new Date().getFullYear();
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}
+  });
+});
+</script>
+</body>
+</html>
