@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Restaurant Ftour & More — Nador | Cuisine du Monde</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>">
 <meta name="description" content="Restaurant Ftour & More à Nador. Cuisine du monde, petit-déjeuner, déjeuner et dîner. Ingrédients frais, ambiance chaleureuse. Réservez votre table en ligne. Ouvert 7j/7.">
 <meta name="keywords" content="restaurant Nador, ftour and more, cuisine du monde Nador, réservation restaurant Nador, petit-déjeuner Nador, café restaurant Nador">
 <meta name="robots" content="index, follow">
@@ -309,6 +310,7 @@ tr:hover td{background:var(--lt)}
   .a-stats{grid-template-columns:1fr}
   .menu-grid{grid-template-columns:1fr}
 }
+.f-legal{margin:.5rem 0;font-size:.8rem}.f-legal a{color:rgba(255,255,255,.5);transition:color .3s}.f-legal a:hover{color:var(--gold)}
 </style>
 </head>
 <body>
@@ -537,7 +539,7 @@ tr:hover td{background:var(--lt)}
       </div>
       <div>
         <div class="map-c">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26352.69!2d-2.9330!3d35.1681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7562b3b4d4cfb3%3A0x8c2b1b48d8f6b6e!2sNador!5e0!3m2!1sfr!2sma!4v1680000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localisation restaurant Ftour and More Nador"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3300!2d-2.9330!3d35.1681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7575e8e2481983%3A0x4f2e7c8cd7e8b0a!2sFtour%20%26%20More!5e0!3m2!1sfr!2sma" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localisation restaurant Ftour and More Nador"></iframe>
         </div>
       </div>
     </div>
@@ -589,6 +591,7 @@ tr:hover td{background:var(--lt)}
     </div>
     <div class="f-bot">
       <p>© <span id="yr"></span> <span id="cpclick" title="Administration">Ftour & More</span>. Tous droits réservés.</p>
+      <div class="f-legal"><a href="mentions-legales.html">Mentions légales</a> · <a href="mentions-legales.html#confidentialite">Politique de confidentialité</a></div>
       <p>Fait avec ❤️ à Nador, Maroc</p>
     </div>
   </div>
@@ -636,7 +639,7 @@ tr:hover td{background:var(--lt)}
     <div id="admLogin" class="adm-login">
       <div style="font-size:3rem;margin-bottom:1rem">🔐</div>
       <h3>Accès administrateur</h3>
-      <p>Entrez le mot de passe pour accéder au tableau de bord.<br><small style="color:var(--gr-l)">(Démo : admin2026)</small></p>
+      <p>Entrez le mot de passe pour accéder au tableau de bord.</p>
       <div class="adm-lf">
         <input class="fc" type="password" id="admPwd" placeholder="Mot de passe" onkeypress="if(event.key==='Enter')admLogin()">
         <button class="sub-btn" onclick="admLogin()">Se connecter</button>
@@ -879,13 +882,16 @@ function closeAdmin(){document.getElementById('admOv').classList.remove('open');
 
 function admLogin(){
   const pwd=document.getElementById('admPwd').value;
-  if(pwd==='admin2026'){
-    document.getElementById('admLogin').style.display='none';
-    document.getElementById('admContent').classList.add('vis');
-    refreshAdminData();
-  }else{
-    showToast('❌ Mot de passe incorrect','er');
-  }
+  crypto.subtle.digest('SHA-256',new TextEncoder().encode(pwd)).then(buf=>{
+    const hash=Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
+    if(hash==='6051fc84a7a0d74c225fb18a496b09952da5642e60723ecae543298edd7d82d6'){
+      document.getElementById('admLogin').style.display='none';
+      document.getElementById('admContent').classList.add('vis');
+      refreshAdminData();
+    }else{
+      showToast('❌ Mot de passe incorrect','er');
+    }
+  });
 }
 
 function refreshAdminData(){
